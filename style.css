@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Petrona:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #1a1a1a;
+    font-family: poppins sans-serif;
+}
+
+.calculator {
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 320px;
+}
+
+#display {
+    width: calc(100% - 20px);
+    height: 80px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 10px;
+    font-size: 2.5em;
+    text-align: right;
+    color: #333;
+    font-weight: bold;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.line1 button {
+    background: #a5a5a5;
+    color: #000;
+}
+
+.line2 button, 
+.line3 button, 
+.line4 button, 
+.line5 button {
+    background: #333;
+    color: white;
+}
+
+
+
+#multipication, #subtraction, #addition, #divide {
+    background: #ff9500 !important;
+    color: white !important;
+}
+
+
+.line5 button#num {
+    background: #333;
+    color: white;
+}
+
+#line5 button#equal {
+    width: 140px;
+}
+
+/* Specific button styling */
+#line5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#clear, #delete, #percent {
+    background: #a5a5a5 !important;
+    color: #000 !important;
+}
+
+#equal {
+    background: #00cc66 !important;
+    flex-grow: 1;
+}
+
+/* Number buttons */
+#line2 button#num:hover,
+#line3 button#num:hover,
+#line4 button#num:hover,
+#line5 button#num:hover {
+    background: #4d4d4d;
+}
+
+/* Operator buttons hover effect */
+#line2 button#multipication:hover,
+#line3 button#subtraction:hover,
+#line4 button#addition:hover,
+#line1 button#divide:hover,
+#line5 button#equal:hover {
+    background: #ffaa33;
+}
